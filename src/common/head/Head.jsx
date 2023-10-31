@@ -19,10 +19,10 @@ const Head = () => {
           </div>
 
           <div className="social">
-            <BsFacebook/>
-            <AiFillInstagram/>
-            <FaXTwitter/>
-            <BsYoutube/>
+            <BsFacebook className='icon'/>
+            <AiFillInstagram className='icon'/>
+            <FaXTwitter className='icon'/>
+            <BsYoutube className='icon'/>
           </div>
         </div>
       </section>

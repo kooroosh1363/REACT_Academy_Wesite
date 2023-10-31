@@ -11,10 +11,33 @@
   text-decoration: none;
 }
 
+
+:root {
+  --initialBack : hsla(0, 0%, 13%, 1);
+  --secondBack : hsla(180, 1%, 19%, 1);
+  --initialColor: hsla(175, 71%, 41%, 1);
+  --darkGrey : hsla(0, 0%, 37%, 1);
+  --headColor : hsla(180, 1%, 18%, 1);
+  --white : hsla(0, 72%, 100%, 1);
+  --black : hsla(0, 0%, 6%, 1);
+  --silver : hsla(206, 22%, 70%, 1);
+}
+
 html{
   scroll-behavior: smooth;
 }
 
 body{
   font-family: 'Playfair Display', serif;
+}
+
+
+.container{
+  max-width: 85%;
+  margin: auto;
+}
+
+.orgFlex{
+  display: flex;
+  justify-content: space-between;
 }
