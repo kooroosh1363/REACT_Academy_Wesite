@@ -9,6 +9,7 @@
   padding: 0;
   outline: none;
   text-decoration: none;
+  list-style: none;
 }
 
 
@@ -16,11 +17,11 @@
   --initialBack : hsla(0, 0%, 13%, 1);
   --secondBack : hsla(180, 1%, 19%, 1);
   --initialColor: hsla(175, 71%, 41%, 1);
-  --darkGrey : hsla(0, 0%, 37%, 1);
-  --headColor : hsla(180, 1%, 18%, 1);
+  --darkGrey : hsla(0, 0%, 27%, 0.76);
+  --headColor : hsla(0, 100%, 100%, 0.2);
   --white : hsla(0, 72%, 100%, 1);
   --black : hsla(0, 0%, 6%, 1);
-  --silver : hsla(206, 22%, 70%, 1);
+  --silver : hsla(0, 0%, 23%, 0.61);
 }
 
 html{
@@ -29,6 +30,7 @@ html{
 
 body{
   font-family: 'Playfair Display', serif;
+  background-color: var(--darkGrey) !important;
 }
 
 
@@ -41,3 +43,4 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
