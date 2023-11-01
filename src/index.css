@@ -30,7 +30,7 @@ html{
 
 body{
   font-family: 'Playfair Display', serif;
-  background-color: var(--darkGrey) !important;
+  background-color: var(--white) !important;
 }
 
 
@@ -46,4 +46,31 @@ body{
 
 button{
   border: none;
+}
+
+
+.row{
+  width: 50%;
+}
+
+.btn button{
+  padding: 17px 30px !important;
+  background-color: var(--white) !important;
+  color: var(--initialColor) !important;
+  font-weight: 600 !important;
+  border: none !important;
+  margin: 30px 10px 0 0 !important;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px hsla(83, 0%, 4%, 0.78) !important;
+}
+
+.btn button{
+  box-shadow: none;
+}
+
+.btn button .icon_1{
+  margin-left: 20px;
+  text-align: center;
+  
 }
