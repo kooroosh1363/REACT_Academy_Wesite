@@ -49,6 +49,10 @@ header ul li a:hover {
         display: none;
     }
 
+    header ul li{
+        margin-bottom: 10px;
+    }
+
     .toggle {
         display: block;
         background: none;
@@ -57,11 +61,14 @@ header ul li a:hover {
         position: absolute;
         right: 30px;
         top: 20px;
-        border: none;
+        
     }
 
     .navMobile{
         position: absolute;
-        top: 7vh;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--initialColor);
     }
 }
