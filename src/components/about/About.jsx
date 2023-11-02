@@ -1,10 +1,13 @@
 import React from 'react'
+import "./About.css"
+import Back from '../../common/back/Back'
 
 const About = () => {
   return (
-    <div>
-      about
-    </div>
+    <>
+      
+      <Back title= "About Us"/>
+    </>
   )
 }
 
