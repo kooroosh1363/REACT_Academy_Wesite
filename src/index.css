@@ -53,7 +53,7 @@ button{
   width: 50%;
 }
 
-.btn button{
+button{
   padding: 17px 30px !important;
   background-color: var(--white) !important;
   color: var(--initialColor) !important;
@@ -65,12 +65,20 @@ button{
   box-shadow: 0 24px 36px -11px hsla(83, 0%, 4%, 0.78) !important;
 }
 
-.btn button{
+button{
   box-shadow: none;
 }
 
-.btn button .icon_1{
+button .icon_1{
   margin-left: 20px;
-  text-align: center;
   
+}
+
+button:hover{
+  box-shadow: none;
+}
+
+.btnInit{
+  background-color: var(--initialColor) !important;
+  color: var(--white) !important;
 }

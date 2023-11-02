@@ -16,7 +16,7 @@ const Hero = () => {
                         Get Started Now <AiOutlineArrowRight className='icon_1'/>
                     </button>
 
-                    <button className='btnInit'>
+                    <button >
                         View Course <AiOutlineArrowRight className='icon_1'/>
                     </button>
                 </div>
