@@ -26,7 +26,7 @@ const Header = () => {
           </ul>
 
           <div className="init">
-            <div className="btn">
+            <div >
               GET Diploma
             </div>
           </div>

@@ -53,7 +53,7 @@ button{
   width: 50%;
 }
 
-button{
+.btn{
   padding: 17px 30px !important;
   background-color: var(--white) !important;
   color: var(--initialColor) !important;
@@ -65,20 +65,43 @@ button{
   box-shadow: 0 24px 36px -11px hsla(83, 0%, 4%, 0.78) !important;
 }
 
-button{
+.btn{
   box-shadow: none;
 }
 
-button .icon_1{
+.btn .icon_1{
   margin-left: 20px;
   
 }
 
-button:hover{
+.btn:hover{
   box-shadow: none;
 }
 
 .btnInit{
   background-color: var(--initialColor) !important;
   color: var(--white) !important;
+}
+
+#heading{
+  text-align: center;
+  padding: 40px 0;
+}
+
+#heading h3{
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--initialColor);
+  text-transform: uppercase;
+}
+
+
+#heading h1{
+  font-size: 45px;
+  text-transform: capitalize;
+}
+
+p{
+  line-height: 30px;
+  font-size: 18px;
 }

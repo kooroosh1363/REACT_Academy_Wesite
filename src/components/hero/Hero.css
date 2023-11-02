@@ -12,3 +12,32 @@
     padding-right: 50px;
     color: var(--white);
 }
+
+
+.hero #heading h3{
+    color: var(--white);
+
+}
+
+.hero #heading{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    .margin{
+        height: 40vh;
+    }
+
+
+    .hero{
+        background-position: right;
+        padding-top: 40%;
+        height: 100vh;
+    }
+
+    .hero .row{
+        width: 100%;
+    }
+}
