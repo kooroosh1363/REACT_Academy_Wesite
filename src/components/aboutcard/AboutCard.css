@@ -1,0 +1,56 @@
+.homeAbout{
+    height: auto;
+}
+
+
+.homeAbout #heading{
+    text-align: left;
+    padding: 0;
+}
+
+
+.homeAbout .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.homeAbout .right{
+    padding: 80px 50px;
+}
+
+.homeAbout .items{
+    margin-top: 50px;
+}
+
+
+.homeAbout .item{
+    background-color: var(--white);
+    margin-top: 30px;
+    padding: 20px ;
+    transition: 0.5s;
+}
+
+.homeAbout .img{
+    width: 200px !important;
+}
+
+.homeAbout img{
+    width: 70px;
+    height: 70px;
+}
+
+
+.homeAbout .item h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.homeAbout .item:hover{
+    background-color: var(--initialColor);
+color: var(--white);
+cursor: pointer;
+box-shadow: 0px 5px 25px -2px rgb(0 0 0 /6%);
+
+}

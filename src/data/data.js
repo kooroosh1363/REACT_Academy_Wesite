@@ -18,6 +18,9 @@ export const homeAbout = [
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
 ]
+
+
+
 export const awrapper = [
   {
     cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
@@ -41,6 +44,9 @@ export const awrapper = [
     title: "COURSES",
   },
 ]
+
+
+
 export const coursesCard = [
   {
     id: 1,
@@ -169,6 +175,9 @@ export const coursesCard = [
     pricePer: "$3 per month",
   },
 ]
+
+
+
 export const online = [
   {
     cover: "./images/courses/online/o1.png",
@@ -243,6 +252,9 @@ export const online = [
     course: "17 Courses",
   },
 ]
+
+
+
 export const team = [
   {
     cover: "./images/team/t1.webp",
@@ -285,6 +297,9 @@ export const team = [
     work: "DEVELOPER AND LEAD INSTRUCTOR",
   },
 ]
+
+
+
 export const price = [
   {
     name: "BASIC PLAN",
@@ -307,6 +322,9 @@ export const price = [
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
 ]
+
+
+
 export const faq = [
   {
     title: "How to Enroll This Online Courses?",
@@ -333,6 +351,10 @@ export const faq = [
     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
 ]
+
+
+
+
 export const blog = [
   {
     id: 1,
@@ -389,6 +411,10 @@ export const blog = [
     cover: "../images/blog/b6.webp",
   },
 ]
+
+
+
+
 export const testimonal = [
   {
     id: 1,
