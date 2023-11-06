@@ -54,3 +54,18 @@ cursor: pointer;
 box-shadow: 0px 5px 25px -2px rgb(0 0 0 /6%);
 
 }
+
+
+
+@media screen and (max-width:768px) {
+    .homeAbout .container{
+        flex-direction: column-reverse;
+    }
+
+
+    .homeAbout .row{
+        width: 100%;
+    }
+
+
+}
