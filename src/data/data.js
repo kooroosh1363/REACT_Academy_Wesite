@@ -1,3 +1,19 @@
+import { RiUserSettingsFill } from "react-icons/ri";
+import { TfiWrite } from "react-icons/tfi";
+import { CgWebsite } from "react-icons/cg";
+import { BsWordpress } from "react-icons/bs";
+import { SiPreact } from "react-icons/si";
+import { SiWebmoney } from "react-icons/si";
+import { SiHtmlacademy } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+
+
+
+
+
+
+
 export const homeAbout = [
   {
     id: 1,
@@ -50,7 +66,7 @@ export const awrapper = [
 export const coursesCard = [
   {
     id: 1,
-    cover: "../images/courses/c1.png",
+    cover: <RiUserSettingsFill/>,
     coursesName: "Introducing to Software Engineering",
     courTeacher: [
       {
@@ -64,7 +80,7 @@ export const coursesCard = [
   },
   {
     id: 2,
-    cover: "../images/courses/c2.png",
+    cover: <TfiWrite/>,
     coursesName: "Enhancing Adobe Photoshop CC 2020 Skills",
     courTeacher: [
       {
@@ -78,7 +94,7 @@ export const coursesCard = [
   },
   {
     id: 3,
-    cover: "../images/courses/c3.png",
+    cover: <CgWebsite/>,
     coursesName: "HTML, CSS, and Javascript for Web Developers",
     courTeacher: [
       {
@@ -92,7 +108,7 @@ export const coursesCard = [
   },
   {
     id: 4,
-    cover: "../images/courses/c4.png",
+    cover: <BsWordpress/>,
     coursesName: "Introducing to Programming with WordPress",
     courTeacher: [
       {
@@ -106,7 +122,7 @@ export const coursesCard = [
   },
   {
     id: 5,
-    cover: "../images/courses/c5.png",
+    cover: <SiPreact/>,
     coursesName: "Introducing to Programming with ReactJS",
     courTeacher: [
       {
@@ -120,7 +136,7 @@ export const coursesCard = [
   },
   {
     id: 6,
-    cover: "../images/courses/c6.png",
+    cover: <SiWebmoney/>,
     coursesName: "Learn Frontend Programming Language",
     courTeacher: [
       {
@@ -134,7 +150,7 @@ export const coursesCard = [
   },
   {
     id: 7,
-    cover: "../images/courses/c7.png",
+    cover: <SiHtmlacademy/>,
     coursesName: "Introducing to with HTML / CSS",
     courTeacher: [
       {
@@ -148,7 +164,7 @@ export const coursesCard = [
   },
   {
     id: 8,
-    cover: "../images/courses/c8.png",
+    cover: <FaJava/>,
     coursesName: "Introducing to with JAVA",
     courTeacher: [
       {
@@ -162,7 +178,7 @@ export const coursesCard = [
   },
   {
     id: 9,
-    cover: "../images/courses/c9.png",
+    cover: <TbBrandJavascript/>,
     coursesName: "Introducing to with HTML / CSS / JAVASCRIPT",
     courTeacher: [
       {
