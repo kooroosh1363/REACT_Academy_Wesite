@@ -22,6 +22,7 @@
   --white : hsla(0, 72%, 100%, 1);
   --black : hsla(0, 0%, 6%, 1);
   --silver : hsla(0, 0%, 23%, 0.61);
+  --cream : hsla(78, 100%, 84%, 1);
 }
 
 html{
@@ -83,6 +84,26 @@ button{
   color: var(--white) !important;
 }
 
+
+.btn_out{
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+  height: 10%;
+  border: 2px solid var(--initialColor);
+  transition: 0.5s;
+  color: var(--initialColor);
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+
+.btn_out:hover{
+  background-color: var(--initialColor);
+  color: var(--white);
+}
+
 #heading{
   text-align: center;
   padding: 40px 0;
@@ -122,6 +143,13 @@ p{
 .flex{
   display: flex;
 
+}
+
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:30px;
 }
 
 @media screen and (max-width:768px) {

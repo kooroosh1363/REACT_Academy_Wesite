@@ -1,0 +1,80 @@
+.coursesCard {
+    padding: 50p 0;
+}
+
+.coursesCard .items{
+    background-color: var(--darkGrey);
+    padding: 30px;
+    text-align: center;
+}
+
+.coursesCard .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--initialColor);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coursesCard .icon i{
+    color: var(--white);
+    font-size: 50px;
+    
+}
+
+.coursesCard .text{
+    margin-left: 15px;
+    text-align: left;
+}
+
+.coursesCard .text h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.coursesCard .rate{
+    margin: 20px 0;
+    color: var(--initialColor);
+}
+
+
+.coursesCard .rate .orgIcon { 
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+
+
+.coursesCard .imgD img{
+    width: 100Px;
+    height: 100Px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.coursesCard .detail .box{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.coursesCard .detail span{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--initialColor);
+}
+
+
+.coursesCard .price{
+    margin: 30px 0;
+    background-color: var(--cream);
+    padding: 20px;
+}
+
+
