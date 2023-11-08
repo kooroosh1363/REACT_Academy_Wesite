@@ -7,6 +7,30 @@ import { SiWebmoney } from "react-icons/si";
 import { SiHtmlacademy } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
+import { MdDesignServices } from "react-icons/md";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { PiPaintBrushDuotone } from "react-icons/pi";
+import { PiPaintBrushLight } from "react-icons/pi";
+import { BiData } from "react-icons/bi";
+import { BiSolidData } from "react-icons/bi";
+import { MdOutlinePersonSearch } from "react-icons/md";
+import { MdPersonSearch } from "react-icons/md";
+import { BsClipboardData } from "react-icons/bs";
+import { BsFillClipboardDataFill } from "react-icons/bs";
+import { MdOutlineSettingsInputComponent } from "react-icons/md";
+import { MdSettingsInputComponent } from "react-icons/md";
+import { BsHeartPulse } from "react-icons/bs";
+import { BsHeartPulseFill } from "react-icons/bs";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { IoShareSocialSharp } from "react-icons/io5";
+import { AiOutlineSetting } from "react-icons/ai";
+import { AiTwotoneSetting } from "react-icons/ai";
+import { HiOutlineMusicNote } from "react-icons/hi";
+import { HiMusicNote } from "react-icons/hi";
+import { RiStickyNote2Line } from "react-icons/ri";
+import { RiStickyNote2Fill } from "react-icons/ri";
+import { RiMessageLine } from "react-icons/ri";
+import { RiMessageFill } from "react-icons/ri";
 
 
 
@@ -196,74 +220,74 @@ export const coursesCard = [
 
 export const online = [
   {
-    cover: "./images/courses/online/o1.png",
-    hoverCover: "./images/courses/online/o1.1.png",
+    cover: <MdDesignServices/>,
+    hoverCover: <MdOutlineDesignServices/>,
     courseName: "UI/UX Design Courses",
     course: "25 Courses",
   },
   {
-    cover: "./images/courses/online/o2.png",
-    hoverCover: "./images/courses/online/o2.1.png",
+    cover: <PiPaintBrushDuotone/>,
+    hoverCover: <PiPaintBrushLight/>,
     courseName: "Art & Design",
     course: "25 Courses",
   },
   {
-    cover: "./images/courses/online/o3.png",
-    hoverCover: "./images/courses/online/o3.1.png",
+    cover: <BiData/>,
+    hoverCover: <BiSolidData/>,
     courseName: "Computer Science",
     course: "10 Courses",
   },
   {
-    cover: "./images/courses/online/o4.png",
-    hoverCover: "./images/courses/online/o4.1.png",
+    cover: <MdOutlinePersonSearch/>,
+    hoverCover: <MdPersonSearch/>,
     courseName: "History & Archeologic",
     course: "15 Courses",
   },
   {
-    cover: "./images/courses/online/o5.png",
-    hoverCover: "./images/courses/online/o5.1.png",
+    cover: <BsClipboardData/>,
+    hoverCover: <BsFillClipboardDataFill/>,
     courseName: "Software Engineering",
     course: "30 Courses",
   },
   {
-    cover: "./images/courses/online/o6.png",
-    hoverCover: "./images/courses/online/o6.1.png",
+    cover: <MdOutlineSettingsInputComponent/>,
+    hoverCover: <MdSettingsInputComponent/>,
     courseName: "Information Software",
     course: "60 Courses",
   },
   {
-    cover: "./images/courses/online/o7.png",
-    hoverCover: "./images/courses/online/o7.1.png",
+    cover: <BsHeartPulse/>,
+    hoverCover: <BsHeartPulseFill/>,
     courseName: "Health & Fitness",
     course: "10 Courses",
   },
   {
-    cover: "./images/courses/online/o8.png",
-    hoverCover: "./images/courses/online/o8.1.png",
+    cover: <IoShareSocialOutline/>,
+    hoverCover: <IoShareSocialSharp/>,
     courseName: "Marketing",
     course: "30 Courses",
   },
   {
-    cover: "./images/courses/online/o9.png",
-    hoverCover: "./images/courses/online/o9.1.png",
+    cover: <AiOutlineSetting/>,
+    hoverCover: <AiTwotoneSetting/>,
     courseName: "Graphic Design",
     course: "80 Courses",
   },
   {
-    cover: "./images/courses/online/o10.png",
-    hoverCover: "./images/courses/online/o10.1.png",
+    cover: <HiOutlineMusicNote/>,
+    hoverCover: <HiMusicNote/>,
     courseName: "Music",
     course: "120 Courses",
   },
   {
-    cover: "./images/courses/online/o11.png",
-    hoverCover: "./images/courses/online/o11.1.png",
+    cover: <RiStickyNote2Line/>,
+    hoverCover: <RiStickyNote2Fill/>,
     courseName: "Business Administration",
     course: "17 Courses",
   },
   {
-    cover: "./images/courses/online/o12.png",
-    hoverCover: "./images/courses/online/o12.1.png",
+    cover: <RiMessageLine/>,
+    hoverCover: <RiMessageFill/>,
     courseName: "Web Management",
     course: "17 Courses",
   },
