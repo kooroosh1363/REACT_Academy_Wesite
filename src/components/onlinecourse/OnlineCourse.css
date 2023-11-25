@@ -35,9 +35,9 @@
     padding: 5px 20px;
     font-weight: 500;
     font-size: 18px;
-    color: var(--initialColor);
+    color: var(--headColor);
     background-color: var(--white);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .online .box .show{
@@ -46,8 +46,8 @@
 
 
 .online .box:hover{
-    background-color: var(--initialColor);
-    border-radius: 8px;
+    background-color: var(--headColor);
+    border-radius: 10px;
     cursor: pointer;
 }
 
