@@ -163,6 +163,17 @@ p {
   grid-gap: 10px;
 }
 
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
 .padding {
   padding: 80px 0;
 }
