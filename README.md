@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# PATHWAY — Curriculum & Prerequisite Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PATHWAY modernizes a 2023 React academy template into a testable curriculum-planning system.
 
-## Available Scripts
+The original repository presented a full online academy, but its implementation did not support those claims. It included navigation to routes that were never registered, fake enrollment and diploma actions, invented course pricing, fixed five-star ratings, placeholder instructors, fabricated success metrics, placeholder testimonials/content, and large decorative assets.
 
-In the project directory, you can run:
+## Engineering identity
 
-### `npm start`
+**PATHWAY — Curriculum & Prerequisite Planner**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The new project focuses on logic that can be implemented and tested honestly in a static frontend:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- structured course catalog
+- prerequisite graph validation
+- prerequisite-closed completion state
+- course eligibility
+- transitive prerequisite lookup
+- cascade removal when a prerequisite is uncompleted
+- catalog search
+- track and level filtering
+- deterministic sorting
+- workload progress summaries
+- local persistence recovery
 
-### `npm test`
+## Curriculum invariant
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A completed course is valid only when all of its prerequisites are also completed.
 
-### `npm run build`
+For example:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+Web Foundations
+      │
+      ▼
+JavaScript Systems
+      ├──────────────► State Modeling & Recovery
+      │
+      ▼
+React Interface Engineering
+      │
+      ▼
+Accessibility & Quality Gates
+      │
+      └──────────────┐
+                     ▼
+              Delivery, CI & Static Hosting
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If `JavaScript Systems` is marked incomplete, any completed dependent courses that can no longer satisfy the graph are removed as well.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Architecture
 
-### `npm run eject`
+```text
+src/data/curriculum.js
+        │
+        ▼
+src/lib/curriculumPolicy.js
+        ├─ catalog validation
+        ├─ persisted-state sanitization
+        ├─ prerequisite closure
+        ├─ course status
+        ├─ eligibility
+        ├─ cascade completion transitions
+        ├─ filtering / sorting
+        └─ workload progress
+        │
+        ▼
+src/App.jsx
+        ├─ localStorage integration
+        ├─ planner filters
+        ├─ course state rendering
+        └─ progress summaries
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Product boundaries
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+PATHWAY does **not** implement or claim:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- student accounts
+- enrollment
+- payments
+- subscriptions
+- live instructors
+- course delivery/video hosting
+- certificates
+- diplomas
+- accreditation
+- grades
+- real student counts
+- real ratings or testimonials
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The curriculum is explicitly demo data used to exercise prerequisite logic.
 
-## Learn More
+## Modernization summary
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Create React App → Vite
+- React 18 → React 19
+- removed React Router
+- removed React Icons
+- removed Web Vitals
+- removed broken/unregistered navigation routes
+- removed fake `GET Diploma` action
+- removed fake `Enroll Now` actions
+- removed invented prices and subscriptions
+- removed fixed five-star ratings
+- removed placeholder instructors
+- removed fabricated success/tutor/schedule/course metrics
+- removed placeholder team, pricing, FAQ, blog, and testimonial data
+- removed external Icons8/Freepik dependencies
+- removed decorative stock imagery
+- removed ~2.9 MB PNG asset
+- removed editor-specific `.vscode` settings
+- removed oversized Google Fonts import
+- removed CRA public/test boilerplate
+- removed legacy lockfile
+- added Vitest, CI, Pages deployment, and professional documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Local development
 
-### Code Splitting
+Requirements:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Node.js 22+
+- npm
 
-### Analyzing the Bundle Size
+```bash
+npm install --legacy-peer-deps --no-audit --no-fund
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tests
 
-### Making a Progressive Web App
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The suite covers:
 
-### Advanced Configuration
+- valid catalog acceptance
+- duplicate IDs
+- missing prerequisites
+- self prerequisites
+- cycle detection
+- invalid persisted state
+- unknown IDs
+- duplicate completion IDs
+- prerequisite-invalid recovery
+- prerequisite-closed recovery
+- transitive prerequisite closure
+- eligible / locked / completed / missing states
+- course eligibility
+- completion transitions
+- locked-course protection
+- cascade removal
+- skill search
+- combined track/level filters
+- title sorting
+- workload sorting
+- progress hours and percentage
+- filter option generation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Quality gate
 
-### Deployment
+```bash
+npm run check
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Runs syntax checks, Vitest, and a Vite production build.
 
-### `npm run build` fails to minify
+## CI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`.github/workflows/quality.yml` runs on pull requests and pushes to `main`.
+
+## Deployment
+
+PATHWAY includes a manual GitHub Pages workflow.
+
+1. Open **Settings → Pages**.
+2. Set **Source** to **GitHub Actions**.
+3. Open **Actions → Deploy Pages**.
+4. Run the workflow.
+
+## Security review
+
+No API keys, passwords, tokens, authentication flows, payment data, backend endpoints, unsafe HTML rendering, or sensitive browser storage are required.
+
+The only persisted state is a sanitized list of public demo course IDs.
+
+## License
+
+MIT. See [LICENSE](./LICENSE).
